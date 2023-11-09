@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "lint:fix": "eslint --fix src --ext ts,tsx",
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-    "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
+    "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+    "pre-commit": "npm run format && npm run lint",
+    "postinstall": "husky install",
+    "prepare": "test -d node_modules/husky && husky install || echo \"husky is not installed\""
   },
   "dependencies": {
     "react": "^18.2.0",
