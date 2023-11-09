@@ -16,6 +16,7 @@
     "prepare": "test -d node_modules/husky && husky install || echo \"husky is not installed\""
   },
   "dependencies": {
+    "husky": "8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
