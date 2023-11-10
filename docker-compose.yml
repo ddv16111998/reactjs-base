@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    ports:
+      - "3011:5173"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
